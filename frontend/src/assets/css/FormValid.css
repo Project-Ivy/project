@@ -1,0 +1,182 @@
+.wrapper-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem 0;
+  color: #252525;
+}
+
+.wrapper-form .header-form h2 {
+  color: #252525;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.wrapper-form .form {
+  width: 30rem;
+}
+
+.wrapper-form .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper-form .form form .name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapper-form .form form .form-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper-form .form form .form-grp label {
+  font-size: 17px;
+  color: #252525;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.wrapper-form .form form .form-grp input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 4px 10px;
+  border: 2px solid #abababa5;
+  border-radius: 5px;
+  outline: none;
+}
+
+.wrapper-form .form form .form-grp input.error {
+  border: 2px solid #eb5757;
+}
+
+.wrapper-form .form form .form-grp input:focus {
+  border: 2px solid #00cd9c;
+}
+
+.wrapper-form .form form .form-grp .inp {
+  align-items: center;
+}
+
+.wrapper-form .form form .form-grp .inp .icon-warn{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 0 10px;
+}
+
+.wrapper-form .form form .form-grp .inp .icon-warn span {
+  position: absolute;
+  transform: translateY(-31px);
+  color: #eb5757;
+}
+
+.wrapper-form .form form .form-grp .error-message {
+  transform: translate(2px, -5px);
+  font-size: 13px;
+  color: #eb5757;
+}
+
+.wrapper-form .form form .form-grp.radio-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper-form .form form .form-grp.radio-grp .radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old) {
+  width: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old)
+  + label {
+  display: inline-block;
+  margin-left: -2.3em;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old)
+  + label
+  > span {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  margin: 0.25em 0.5em 0.25em 0.25em;
+  border: 1px solid #ababab;
+  border-radius: 100%;
+  background-color: transparent;
+  vertical-align: bottom;
+}
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old)
+  + label
+  > span.error-radio{
+    border: 1px solid #eb5757;
+  }
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old):checked
+  + label
+  > span {
+  background-color: transparent;
+}
+
+.wrapper-form
+  .form
+  form
+  .form-grp.radio-grp
+  .radio
+  input[type="radio"]:not(old):checked
+  + label
+  > span
+  > span {
+  display: block;
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0.3em;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-color: #1cb0f6;
+}
