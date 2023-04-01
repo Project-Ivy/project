@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from "./pages/Homepage";
 
 import LandingPage from "./pages/landing/LandingPage"
 import Register from "./pages/auth/Register";
@@ -19,6 +20,7 @@ root.render(
         <Route path="/" element={ <LandingPage /> } />
         <Route path="/register" element={<Register />} />
         <Route path="/formvalidation" element={<FormValidation />} />
+        <Route path="/homepage" element={<Homepage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
