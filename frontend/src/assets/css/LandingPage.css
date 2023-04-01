@@ -1,0 +1,120 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+.background-page {
+  background-color: #e1fdff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 65px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  height: 75vh !important;
+  width: 90vw;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.row div {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row div h1 {
+  font-size: 64px;
+  letter-spacing: 2.4px;
+}
+
+.row div span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: justify;
+  margin-bottom: 1rem !important;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.btn-group {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding: 0rem !important;
+}
+
+.btn-reg {
+  width: 260px;
+  height: 70px;
+  background: #02FEE7;
+  border: 1px solid #02FEE7;
+  border-radius: 39px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.btn-log {
+  width: 260px;
+  height: 70px;
+  background: #02FEE7;
+  border: 1px solid #02FEE7;
+  border-radius: 39px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.contact-info{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  margin-top: 2rem !important;
+  padding: 0 !important;
+}
+
+.contact-info p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  color: #161616;
+}
+
+.icon-group{
+  margin-left: 2rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+.icon-info{
+  font-size: 34px;
+}

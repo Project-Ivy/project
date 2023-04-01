@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import LandingPage from "./pages/landing/LandingPage"
 import Register from "./pages/auth/Register";
 import FormValidation from "./pages/auth/FormValidation";
 
@@ -15,6 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={ <LandingPage /> } />
         <Route path="/register" element={<Register />} />
         <Route path="/formvalidation" element={<FormValidation />} />
       </Routes>
