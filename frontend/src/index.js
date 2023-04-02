@@ -7,6 +7,7 @@ import Homepage from "./pages/Homepage";
 
 import LandingPage from "./pages/landing/LandingPage"
 import Register from "./pages/auth/Register";
+import Login from "./pages/auth/Login";
 import FormValidation from "./pages/auth/FormValidation";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,6 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={ <LandingPage /> } />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={ <Login />} />
         <Route path="/formvalidation" element={<FormValidation />} />
         <Route path="/homepage" element={<Homepage />} />
       </Routes>

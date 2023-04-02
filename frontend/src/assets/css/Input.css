@@ -1,0 +1,26 @@
+.input-comp {
+  display: flex;
+  flex-direction: column; 
+}
+
+.input-data {
+  margin-top: 0rem !important;
+  border: 2px solid #cecece !important;
+  padding: 0.8rem;
+  border-radius: 7px;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-field {
+  color: #010d3e;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.input-error {
+  color: red;
+  margin-top: 0.1rem !important;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
