@@ -1,0 +1,201 @@
+:root {
+  --form-control-color: rebeccapurple;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.login-background {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.ALertNotif{
+  background-color: red;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  width: auto;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 35vw;
+  height: 85vh;
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 1.4rem !important;
+  box-shadow: 2px 4px 16px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 2px 4px 16px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 2px 4px 16px 1px rgba(0, 0, 0, 0.42);
+  z-index: 10;
+}
+
+.password-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title p {
+  margin-top: 0.5rem !important;
+  color: rgb(165, 165, 165);
+  font-size: 1.36rem;
+  letter-spacing: 3px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  color: #cecece;
+  font-weight: 500;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link-to {
+  color: #883dff;
+}
+
+.btn-login {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #883dff;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 0.3rem !important;
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid #cececece;
+  border-radius: 0.4em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:focus {
+  outline: solid var(--form-control-color);
+}
+
+.line-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line-control {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.line-label {
+  color: #cecece;
+}
+
+.line {
+  height: 1px !important;
+  width: 11.3rem;
+  border: 1px solid #cecece;
+}
+
+.button-grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  background-color: transparent;
+  height: 3.3rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 93, 34);
+  color: rgb(255, 93, 34);
+}
+
+
+.btn-facebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  background-color: transparent;
+  height: 3.3rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: 2px solid rgb(34, 49, 255);
+  color: rgb(36, 36, 255);
+
+}
+
+.icon-google {
+  font-size: 34px !important;
+}
+
+.icon-facebook {
+  height: 34px;
+}
+
+.row-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+}
+
+.login-vector{
+  z-index: 10;
+}
